@@ -5,13 +5,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f8f8f8;
+    background-color: #011936;
 }
 #calendars-index-left-col{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.fc-view-harness{
-    background-color: #ffffff;
+.fc-view-harness, .fc-timeGridDay-view .fc-day-today{
+    background-color: #E1E5F2 !important;
+}
+.fc-view-harness, .fc-scrollgrid{
+    border-radius: .75rem;
+}
+.fc-scrollgrid-section-header > td{
+    border-radius: .75rem .75rem 0 0;
+}
+.fc-scrollgrid-section-body > td{
+    border-radius: 0 0 .75rem .75rem;
+}
+.fc-toolbar-title{
+    color: #ffffff;
+}
+.fc-dayGridMonth-view .fc-day-today, .fc-timeGridWeek-view .fc-day-today {
+    background-color: #F4D35E !important;
+}
+.table-bordered td, .table-bordered th {
+    border: 1px solid #c4c6cf;
 }
